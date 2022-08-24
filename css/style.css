@@ -1,0 +1,447 @@
+body{
+    background: #ffffff;
+}
+.innerBox {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    line-height: 2;
+}
+
+header>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 35px;
+    /* background: #f5df91; */
+    
+}
+
+#nav {
+    text-align: center;
+}
+
+#nav>li {
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+#nav>li>a {
+    display: block;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 0 40px;
+    color: #000000;
+
+   
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    width: 100%;
+    line-height: 35px;
+    height: 230px;
+    z-index: 10;
+}
+
+.sub>li {
+    float: left;
+    width: 100%;
+}
+
+.sub li a {
+    float: left;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+header:hover .sub {
+    display: block;
+}
+
+
+#nav>li:hover .sub {
+    display: block;
+}
+
+
+#nav>li:hover>a {
+    color: #f5df91;
+}
+
+.sub>li:hover>a {
+    color: #f5df91;
+    display: block;
+}
+
+.rightGnb{
+    position: relative;
+    /* background: #634242; */
+}
+
+.rightGnb>li {
+    float: right;
+    padding-right: 40px;
+    padding-top:15px;
+}
+
+.rightGnb li img {
+    width: 20px;
+}
+
+
+/*mainBanner*/
+#mainBanner{
+    max-width: 1920px;
+    padding-top: 10px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mainBannerWrap{
+    position: relative;
+    /*display: flex;*/
+}
+
+.mainBannerWrap>li{
+    position: relative;
+    
+}
+.mainBannerWrap>li>img{
+    width: 100%;
+    
+}
+
+.mainBannerWrap .textBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainBannerWrap .textBox>span{
+    font-size: 23px;
+    color: white;
+    font-weight: 600;
+    margin-left: 3px;
+}
+.mainBannerWrap .textBox>p{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+#mainBanner>.mainBannerBtn{
+    position: absolute;
+    display: flex;
+    bottom: 15%;
+    left:15%;
+    z-index: 10;
+}
+
+.mainBannerBtn{
+    background: #634242;
+}
+
+/* container */
+#container{
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+#container .getBanner{
+    display: flex;
+    justify-content: space-between;
+}
+
+#container>div{
+    width: calc(100/5);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.getBanner>li{
+    float: left;
+   
+}
+.getBanner>li>a{
+    display: block;
+    position: relative;
+}
+.getBanner>li>a:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+.getBanner>div img{
+    width: 100%;
+}
+.getBanner .textBox{
+    position: absolute;
+    max-width: 230px;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    line-height: 35px;
+    color: white;
+    opacity: 0;
+    z-index: 10;
+    transition: 0.5s;
+    
+}
+.getBanner>li>a:hover>.textBox{
+    opacity: 1;
+}
+.getBanner>li>a:hover::after{
+    opacity: 1;
+}
+.getBanner .textBox>span{
+    display: block;
+    font-size: 24px;
+}
+.getBanner .textBox>p{
+    font-size: 38px;
+    /* font-weight: 500px; */
+}
+
+/* .arrow{
+    width: 50px;
+    height: 20px;
+} */
+
+/* subBanner */
+.subBanner {
+    margin-top: 50px;
+  }
+  
+.subBanner > .innerBox {
+    position: relative;
+    display: flex;
+  }
+  
+  
+.subBannerOverlap {
+    margin: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .subBanner01 >.title1 {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+  }
+
+  .subBanner02 >.title2 {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+   
+  }
+
+  .subBanner03 >.title3 {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+  }
+
+  .subBanner04 >.title4 {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .subBannerOverlap {
+    margin-right: 30px;
+  }
+  
+  .subBanner>.innerBox>div {
+    position: relative;
+    
+  }
+
+  .subBanner > .innerBox > .subBanner02 {
+    width: 600px;
+    height: 300px;
+    top: 350px;
+    right: 730px;
+  }
+  
+  .subBanner > .innerBox > .subBanner03 {
+    width: 600px;
+    height: 300px;
+    top: 350px;
+    right: 580px;
+  }
+  
+  .subBanner > .innerBox > .subBanner04 {
+    width: 1500px;
+    height: 650px;
+    right: 480px;
+  }
+
+  .subBanner01 > img {
+    position: absolute;
+    left: 0px;
+  }
+
+  .subBanner02 > img {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+  }
+
+  .subBanner03 > img {
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .subBanner04 > img {
+    height: 580px;
+    position: absolute;
+    left: 150px;
+  }
+  
+ /* shopWrap */
+ .shopWrap{
+    top: 50px;
+    max-width: 1920px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shopBanner{
+    position: relative;
+}
+.shopBanner> img{
+    width: 100%;
+}
+
+.shopBanner>.shopText{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.shopBanner>.shopText>span{
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+}
+
+.shopBanner>.shopText>.shopBtn{
+    margin-top: 30px;
+}
+
+.shopBanner>.shopText>.shopBtn>a{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    max-width: 320px;
+    margin: 0 auto;
+    line-height: 55px;
+    background: rgb(0, 0, 0);
+}
+
+.shopBanner>.shopText>.shopBtn>a:hover{
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    max-width: 320px;
+    margin: 0 auto;
+    line-height: 55px;
+    background: rgb(255, 255, 255);
+}
+
+/* lastWrap */
+.lastWrap{
+    top: 100px;
+    max-width: 1920px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lastBanner{
+    position: relative;
+}
+
+.lastBanner> img{
+    width: 100%;
+}
+
+.lastBanner>.lastText{
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 40px;
+    color: rgb(215, 215, 215);
+}
+
+.emileCheckBox>.search{
+    position: absolute;
+    left: 50%;
+    top: 480px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 30px;
+    color: rgb(142, 142, 142);
+}
+
+/* footer */
+footer .innerBox {
+    position: relative;
+  }
+  
+.footTop {
+    height: 60px;
+    padding-right: 350px;
+  }
+  
+.footTop li {
+    float: left;
+    line-height: 60px;
+    margin: 0 20px;
+  }
+  
+.footTop ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+  }
+
+.rightfoot{
+   top: 23px;
+   position: relative;
+   
+}
+
+
+/* 1920 햄버튼 */
+  
+
+  
+ 
+  
+  
+  
+
+
