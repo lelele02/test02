@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
-    <script src="main.js"></script>
-    
-
+    <script src="js/44-button-banner.js"></script>
 </head>
 
 <body>
@@ -58,24 +55,25 @@
                 <li><a href=""><img src="images/people.svg" alt=""></a></li>
                 <li><a href=""><img src="images/search.svg" alt=""></a></li>
             </ul>
-            <div class="ham">
-                <a href="#void">
-                    <img src="images/ham.svg" alt="">
-                </a>
+            <div class="hamBox">
+                <p class="hamBtn">
+                    <a href="#void">
+                        <img src="images/ham.svg" alt="">
+                    </a>
+                </p>
             </div>
         </div>
     </header>
-
     <div id="mainBanner">
         <ul class="mainBannerWrap">
-            <li>
+            <li class="b1">
                 <img src="images/main1.jpg" alt="">
                 <div class="textBox">
                     <p>BY REDOLENCE</p>
-                    <span>A scent that's nowhere else in the world</span>
+                    <span>lse in the world</span>
                 </div>
             </li>
-            <li>
+            <li class="b2">
                 <img src="images/main2.jpg" alt="">
                 <div class="textBox">
                     <p>BY REDOLENCE</p>
@@ -83,17 +81,14 @@
                 </div>
             </li>
         </ul>
-        <div class="timeBar"><span></span></div>
-
-        <div class="mainBannerBtn">
-            <div class="leftArrow"><a href="#void"><img class="arrow1" src="images/arrow_empty01.svg" alt=""></a></div>
-            <div class="rightArrow"><a href="#void"><img class="arrow2" src="images/arrow_empty02.svg" alt=""></a></div>
-        </div>
+        <ul class="pager">
+            <li class="active"><a href="#void">1</a></li>
+            <li class=""><a href="#void">2</a></li>
+        </ul>
     </div>
-
     <div id="container">
         <section class="bannerBox">
-            /*<h2 class="blind">BEST item</h2>*/
+            <h2 class="blind">bannerBox</h2>
             <div class="innerBox">
                 <ul class="getBanner">
                     <li>
@@ -144,10 +139,6 @@
                 </ul>
             </div>
         </section>
-        <!-- <div class="arrow">
-        <a href="#void"><img class="arrowLeft arrowBtn" src="images/arrow_empty01.svg" alt=""></a>
-        <a href="#void"><img class="arrowRight arrowBtn" src="images/arrow_empty02.svg" alt=""></a>
-        </div> -->
         <section class="subBanner">
             <h2 class="blind">subBanner</h2>
             <div class="innerBox clearFix">
@@ -179,7 +170,6 @@
                 </div>
             </div>
         </section>
-
         <section class="lastWrap">
             <h2 class="blind">lastBanner</h2>
             <div class="lastBanner">
@@ -202,7 +192,6 @@
             </div>
         </section>
     </div>
-
     <footer>
         <div class="footTop clearFix">
             <div class="innerBox">
@@ -216,17 +205,14 @@
 
             <div class="rightfoot">
                 <select>
-                    
                     <option value="choose">France</option>
                     <option value="">Ausria</option>
                     <option value="">Bulgaria</option>
                     <option value="">Canada</option>
                 </select>
             </div>
-
         </div>
     </footer>
-    
 </body>
 
 </html>
